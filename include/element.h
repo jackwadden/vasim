@@ -77,7 +77,7 @@ public:
     std::vector<std::pair<Element *, std::string>> getOutputSpecelPointers();
     bool clearOutputs();
     bool clearOutputPointers();
-    bool clearInputs();
+    void clearInputs();
     std::map<std::string, bool> getInputs();
     bool addOutput(std::string);
     bool addOutputPointer(std::pair<Element *, std::string>);

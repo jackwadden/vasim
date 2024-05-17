@@ -306,7 +306,7 @@ bool Element::clearOutputPointers() {
     return true;
 }
 
-bool Element::clearInputs() {
+void Element::clearInputs() {
 
     inputs.clear();
 }
