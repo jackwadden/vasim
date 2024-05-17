@@ -41,6 +41,9 @@ static string convertThreshold(MNRLDefs::CounterMode m) {
             return "latch";
         case MNRLDefs::CounterMode::ROLLOVER_ON_THRESHOLD:
             return "roll";
+        default:
+            cerr << "Unknown counter mode. Exiting." << endl;
+            exit(1);
     }
 }
 
